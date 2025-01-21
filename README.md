@@ -1,12 +1,12 @@
 # Squirkel
-### A löve2d pixel art scaling module with sharp, non-integer scaling support
-inspired by, and partially based on, [maid64](https://github.com/adekto/maid64)
+### A Löve2d pixel art scaling module with sharp, non-integer scaling support
+Inspired by, and partially based on, [maid64](https://github.com/adekto/maid64)
 
-version 1.0: the Essentials
+Version 1.0: the Essentials
 
 -----
 ## Why?
-The commonly known love2d pixel art scaling modules are all locked to integer scaling.
+The commonly known Love2d pixel art scaling modules are all locked to integer scaling.
 Which is okay... until you make a project with a really unconventional resolution, as I have.
 - Non-integer nearest-neighbour scaling would cause uneven pixels and "shimmering" with moving objects,
 - While bilinear scaling would leave things blurry.
@@ -50,7 +50,7 @@ function love.resize(w, h)
 end
 ```
 
-images and tilesets
+Images and tilesets
 ---
 ```lua
 squirrel = {
@@ -70,7 +70,7 @@ love.graphics.draw(
 	squirrel.x, squirrel.y
 )
 ```
-mouse
+Mouse
 ---
 ```lua
 local mx, my = sqkl.mouse.getPosition()
